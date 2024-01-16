@@ -29,3 +29,14 @@ acf_add_options_page();
 
 // ADD IMAGE SIZE
 add_image_size('home-banner', 1440, 600, ['center', 'center']);
+
+function p($args){
+  echo '<pre>';
+  var_dump($args);
+  echo '</pre>';
+}
+
+function d($args){
+  p($args);
+  die();
+}
