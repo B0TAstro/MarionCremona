@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Gradeur';
+    src: url('../font/Gradeur.woff2') format('woff2'),
+        url('../font/Gradeur.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica-Light';
+    src: url('../font/Helvetica-Light.woff2') format('woff2'),
+        url('../font/Helvetica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url('../font/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('../font/HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url('../font/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('../font/HelveticaNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import "scss/utils/reset.scss";
+@import "scss/global/header.scss";
+@import "scss/global/global.scss";
+@import "scss/global/footer.scss";
+@import "scss/template/page-accueil.scss";
