@@ -31,7 +31,7 @@ get_header();
                         <h2><?php echo $contents_title; ?></h2>
                         <h3><?php echo $contents_price; ?></h3>
                         <div><?php echo $contents_explanation; ?></div>
-                        <a href="<?php echo $contents_link; ?>">REJOINS MO</a>
+                        <a href="<?php echo $contents_link; ?>">REJOINS MOI</a>
                     </div>
             <?php
                 endwhile;
