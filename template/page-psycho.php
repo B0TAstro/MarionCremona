@@ -23,7 +23,7 @@ get_header();
         <h3><?php echo $section_1_info; ?></h3>
         <a href="<?php echo $section_1_link; ?>">REJOINS MOI</a>
         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-psycho/desktop-top_left_illustration.svg" alt="Illustration">
-        </section>
+    </section>
     <section>
         <p><?php echo $section_2_quote; ?></p>
         <p><?php echo $section_2_author; ?></p>
