@@ -1,4 +1,9 @@
 <?php
+/* Template Name: Page Création */
+get_header();
+?>
+<main>
+<?php
         
         $flexible_contents = get_field('flexible_content');
         foreach ($flexible_contents as $content) {
@@ -14,4 +19,7 @@
 
         }
         ?>
-
+</main>
+<?php
+get_footer();
+?>

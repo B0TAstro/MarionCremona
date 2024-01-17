@@ -4,7 +4,6 @@ get_header();
 
 $explanation = get_field('explanation');
 $link = get_field('link');
-var_dump($link);
 
 if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '') {
     var_dump($_POST);
@@ -45,7 +44,7 @@ if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '')
                 <label>Dites-m'en plus...</label>
                 <textarea name="additional_info" placeholder="" required=""></textarea>
             </fieldset>
-            <p>Les données collectées seront seulement communiquées au destinataire suivant : Marion Cremona.</p>
+            <p>Les données collectées seront seulement communiquées au destinataire suivant : Marion Cremona. Voir un prof pour envoyer les mails</p>
             <button type="submit" name="submit">Envoyer</button>
         </form>
     </div>
@@ -55,7 +54,6 @@ if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '')
     <p><?php echo $explanation; ?></p>
     <p>Une <a href="<?php echo $link ?>">Newsletter</a> par mois ! </p>
     <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-contact/" alt="">
-
 </main>
 <?php
 get_footer();
