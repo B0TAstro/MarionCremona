@@ -6,11 +6,22 @@ $explanation = get_field('explanation');
 $link = get_field('link');
 
 if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '') {
-    var_dump($_POST);
-    $message = 'Bonjour ' . $_POST['firstname'] . '. Nouvelle demande de stage de la part de ' . $_POST['lastname'] . '.';
-    wp_mail('test@famille-boullay.fr', 'Test', $message);
+    // Construire le message du mail
+    $subject = 'Demande de contact - ' . $_POST['interest'];
+    $message = $_POST['additional_info'];
+    $message .= "Nom: {$_POST['lastname']}\r\n";
+    $message .= "Prénom: {$_POST['firstname']}\r\n";
+    $message .= "Adresse mail: {$_POST['email']}\r\n";
+    $message .= "Numéro de téléphone: {$_POST['phone']}\r\n";
+
+    // Envoyer le mail
+    wp_mail('cremona.marion@gmail.com', $subject, $message);
+
+    // Afficher un message de confirmation
+    echo '<div>Message envoyé avec succès !</div>';
 }
 ?>
+
 <main>
     <div>
         <form action="" method="post">
@@ -18,9 +29,9 @@ if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '')
             <fieldset>
                 <label>Je suis intéressé.e par :</label>
                 <select name="interest">
-                    <option value="stage">Cours & ateliers</option>
-                    <option value="emploi">Rituel</option>
-                    <option value="emploi">Accompagnement psycho</option>
+                    <option value="cours">Cours & ateliers</option>
+                    <option value="rituel">Rituel</option>
+                    <option value="accompagnement">Accompagnement psycho</option>
                     <option value="autre">Autre...</option>
                 </select>
             </fieldset>
@@ -44,17 +55,17 @@ if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '')
                 <label>Dites-m'en plus...</label>
                 <textarea name="additional_info" placeholder="" required=""></textarea>
             </fieldset>
-            <p>Les données collectées seront seulement communiquées au destinataire suivant : Marion Cremona. Voir un prof pour envoyer les mails</p>
+            <p>Les données collectées seront seulement communiquées au destinataire suivant : Marion Cremona.</p>
             <button type="submit" name="submit">Envoyer</button>
         </form>
     </div>
     <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-contact/splitter.svg" alt="Splitter">
-    <h2>Une question ?
-        Un rendez-vous ?</h2>
+    <h2>Une question ? Un rendez-vous ?</h2>
     <p><?php echo $explanation; ?></p>
     <p>Une <a href="<?php echo $link ?>">Newsletter</a> par mois ! </p>
     <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-contact/" alt="">
 </main>
+
 <?php
 get_footer();
 ?>

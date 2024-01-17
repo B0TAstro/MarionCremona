@@ -11,10 +11,10 @@
 
 <body>
   <header>
-    <?php $logo = get_field('logo', 'option');    ?>
+    <?php $logo = get_field('logo', 'option'); ?>
     <p><?php bloginfo('name'); ?></p>
     <div class="menu-container">
-      <?php wp_nav_menu(array('menu' => 'menu-secondaire')); ?>
+      <div class="nav-second"><?php wp_nav_menu(array('menu' => 'menu-secondaire')); ?></div>
       <div class="nav-main">
         <?php wp_nav_menu(array('menu' => 'menu-principal-1')); ?>
         <a href="<?php echo esc_url(home_url()); ?>">

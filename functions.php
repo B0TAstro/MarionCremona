@@ -40,3 +40,14 @@ function d($args){
   p($args);
   die();
 }
+
+function mailtrap($phpmailer) {
+  $phpmailer->isSMTP();
+  $phpmailer->Host = 'sandbox.smtp.mailtrap.io';
+  $phpmailer->SMTPAuth = true;
+  $phpmailer->Port = 2525;
+  $phpmailer->Username = 'ad7b042c3017ad';
+  $phpmailer->Password = '95ae2f1387c787';
+}
+
+add_action('phpmailer_init', 'mailtrap');
