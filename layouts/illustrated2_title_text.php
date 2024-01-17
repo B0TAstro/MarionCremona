@@ -9,7 +9,7 @@ $layout = $content["layout"];
 $var = ($layout == 'img_left') ? 'invert' : '';
 ?>
 
-<section class="img_text <?php echo (isset($var)) ? $var : ''; ?>">
+<section class="imgs_text <?php echo (isset($var)) ? $var : ''; ?>">
     <div class="top">
         <div class="content">
             <h1><?php echo $title; ?></h1>
