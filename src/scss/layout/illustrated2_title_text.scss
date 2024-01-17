@@ -1,14 +1,15 @@
-.imgs_text {
+.illustrated2_title_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  &.invert {
+      flex-direction: row-reverse;
+  }
+
+  .layout_2_top {
     display: flex;
-    flex-direction: column;
+  }
+}
 
-    &.invert {
-        flex-direction: row-reverse;
-    }
-
-    .top,
-    .bottom {
-        display: flex;
-    }
-} 
- 

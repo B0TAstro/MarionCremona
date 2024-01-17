@@ -1,14 +1,17 @@
-.imgs_text {
-    display: flex;
-    flex-direction: column;
+.layout_3_top {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-    &.invert {
-        flex-direction: row-reverse;
+    .content {
+        margin-right: 174px;
+        margin-left: 174px;
     }
+}
 
-    .top,
-    .bottom {
-        display: flex;
-    }
-} 
- 
+.layout_3_bottom {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
