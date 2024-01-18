@@ -1,5 +1,85 @@
+footer {
+  background-image: url("../images/global/motif.svg");
+  background-size: cover;
 
-footer{
-  background-color: #5F3121;
-  color : #f4f0ea;
+  background-color: #603121;
+  color: #f4f0ea;
+  width: 100%;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .link a {
+      margin-right: 24px;
+    }
+
+    .name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 68px;
+
+      p {
+        font-family: 'Gradeur';
+        font-size: 35px;
+      }
+    }
+
+    .contact {
+      div {
+        display: flex;
+        align-items: center;
+        margin: 14px 0;
+
+        img {
+          margin: 0 13px;
+        }
+      }
+
+      img {
+        max-width: 50%;
+        align-items: right;
+      }
+
+      a {
+        text-decoration: none;
+        border: 1px solid #F3F0E9;
+        border-radius: 25px;
+        padding: 10px 24px;
+        font-size: 20px;
+        ;
+        font-family: 'Helvetica-Light';
+        color: #F3F0E9;
+        margin-top: 2%;
+
+        &:hover {
+          background-color: #F3F0E9;
+          color: #5F3121;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    .menu-footer-container a {
+      text-decoration: none;
+      font-family: 'HelveticaNeue-Medium';
+      font-size: 15px;
+      color: #F3F0E9;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 10%;
+      }
+    }
+
+    p {
+      font-family: 'Helvetica-Light';
+      font-size: 15px;
+      color: #F3F0E9;
+      margin-top: 6px;
+    }
+  }
 }

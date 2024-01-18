@@ -1,9 +1,10 @@
-  <footer>
-    <?php
-    $logo = get_field('logo', 'option');
-    $phone_number = get_field('phone_number', 'option');
-    $link = get_field('link', 'option');
-    ?>
+<footer>
+  <?php
+  $logo = get_field('logo', 'option');
+  $phone_number = get_field('phone_number', 'option');
+  $link = get_field('link', 'option');
+  ?>
+  <div class="wrap">
     <div class="top">
       <div class="link">
         <a href="<?php echo esc_attr(get_field('facebook', 'option')); ?>"> <img src="<?php echo esc_url(get_template_directory_uri() . '/images/global/facebook_logo.svg'); ?>" alt="Logo"></a>
@@ -27,8 +28,9 @@
       <?php wp_nav_menu(array('menu' => 'footer')); ?>
       <p>Copyright © 2024 Marion Cremona. Tous droits réservés.</p>
     </div>
-  </footer>
-  <?php wp_footer(); ?>
-  </body>
+  </div>
+</footer>
+<?php wp_footer(); ?>
+</body>
 
-  </html>
+</html>

@@ -2,12 +2,12 @@
   outline: 1px solid red;
 }
 
-body {
-  margin: 0 80px 0 80px;
+.wrap {
+  margin: 0 80px;
   padding: 0;
 }
 
-.main {
+body {
   background-color: #F3F0E9;
   color: #101010;
 }
@@ -27,7 +27,36 @@ h3 {
   font-size: 40px;
 }
 
+strong {
+  font-family: 'HelveticaNeue-Bold';
+}
+
 p {
   font-family: 'Helvetica-Light';
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-family: 'Gradeur';
+    font-size: 45px;
+  }
+
+  h2 {
+    font-family: 'Gradeur';
+    font-size: 35px;
+  }
+
+  h3 {
+    font-family: 'Gradeur';
+    font-size: 25px;
+  }
+
+  p {
+    font-family: 'Helvetica-Light';
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
