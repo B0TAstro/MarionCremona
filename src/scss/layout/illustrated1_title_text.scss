@@ -3,8 +3,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    margin: 100px 0 122px 0;
+
     &.invert {
         flex-direction: row-reverse;
     }
+
+    .layout_1_content {
+
+        h2 {
+            margin: 16px 0 16px 0;
+        }
+        h3 {
+            margin: 0 0 16px 0;
+        }
+
+        .paragraph {
+            margin: 0 25px 0 0;
+        }
+    }
+
 }

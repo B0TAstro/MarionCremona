@@ -1,0 +1,32 @@
+.layout_4_top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+
+    h1 {
+        margin : 0 162px 0 162px;
+    }
+}
+
+.layout_4_mid {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .paragraph {
+        margin : 50px 0 50px 0;
+    }
+}
+
+.layout_4_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h3 {
+        margin : 50px 390px 50px 390px;
+    }
+}

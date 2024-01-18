@@ -5,9 +5,7 @@ $info = $content["info"];
 $text = $content["text"];
 $illustration = $content["illustration"];
 $layout = $content["layout"];
-var_dump($layout);
 $var = ($layout == 'img_left') ? 'invert' : '';
-var_dump($var);
 ?>
 
 <section class="illustrated1_title_text <?php echo (isset($var)) ? $var : ''; ?>">
