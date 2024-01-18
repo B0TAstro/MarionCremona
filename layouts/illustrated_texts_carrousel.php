@@ -1,29 +1,37 @@
 <?php
 $title = $content["title"];
 $repetor = $content["repetor"];
+$name_link = $content["name_link"];
+$link = $content["link"];
+$layout_4 = $content["layout_4"];
 ?>
 
-<section>
+<style>
+    .carrousel {
+        <?php if ($layout_4 == 'green') : ?>background-color: #999A8D;
+        <?php elseif ($layout_4 == 'yellow') : ?>background-color: #E2B24C;
+        <?php elseif ($layout_4 == 'pink') : ?>background-color: #BF7862;
+        <?php endif; ?>
+    }
+</style>
+
+<section class="carrousel">
     <h2><?php echo $title; ?></h2>
     <div class="parent">
         <?php
-        if (have_rows('repetor')) :
-            while (have_rows('repetor')) : the_row();
-                $illustration = get_sub_field('illustration');
-                $subtitle = get_sub_field("subtitle");
-                $text = get_sub_field("text");
-                $name_link = get_sub_field("name_link");
-                $link = get_sub_field("link");
+        foreach ($repetor as $value) {
+            $illustration = $value["illustration"];
+            $subtitle = $value["subtitle"];
+            $text = $value["text"];
         ?>
-                <div>
-                    <img loading="lazy" src="<?php echo esc_url($illustration['url']); ?>" alt="<?php echo esc_attr($illustration['alt']); ?>">
-                    <h3><?php echo $subtitle; ?></h3>
-                    <div><?php echo $text; ?></div>
-                    <a href="<?php echo $link; ?>"><?php echo $name_link; ?></a>
-                </div>
+            <div>
+                <img loading="lazy" src="<?php echo esc_url($illustration['url']); ?>" alt="<?php echo esc_attr($illustration['alt']); ?>">
+                <h3><?php echo $subtitle; ?></h3>
+                <div><?php echo $text; ?></div>
+            </div>
         <?php
-            endwhile;
-        endif;
+        }
         ?>
     </div>
+    <a href="<?php echo $link; ?>"><?php echo $name_link; ?></a>
 </section>

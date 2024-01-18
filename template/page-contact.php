@@ -6,18 +6,15 @@ $explanation = get_field('explanation');
 $link = get_field('link');
 
 if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '') {
-    // Construire le message du mail
     $subject = 'Demande de contact - ' . $_POST['interest'];
     $message = $_POST['additional_info'];
-    $message .= "Nom: {$_POST['lastname']}\r\n";
-    $message .= "Prénom: {$_POST['firstname']}\r\n";
+    $message .= "\r\n\r\n";
+    $message .= $_POST['lastname'] . ' ' . $_POST['firstname'] . "\r\n";
     $message .= "Adresse mail: {$_POST['email']}\r\n";
     $message .= "Numéro de téléphone: {$_POST['phone']}\r\n";
 
-    // Envoyer le mail
     wp_mail('cremona.marion@gmail.com', $subject, $message);
 
-    // Afficher un message de confirmation
     echo '<div>Message envoyé avec succès !</div>';
 }
 ?>

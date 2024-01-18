@@ -1,3 +1,7 @@
+.illustrated4_center_title_text {
+    margin: 100px 0;
+}
+
 .layout_4_top {
     display: flex;
     align-items: flex-end;
@@ -6,7 +10,7 @@
     margin-bottom: 50px;
 
     h1 {
-        margin : 0 162px 0 162px;
+        margin: 0 162px;
     }
 }
 
@@ -16,7 +20,7 @@
     text-align: center;
 
     .paragraph {
-        margin : 50px 0 50px 0;
+        margin: 50px 0;
     }
 }
 
@@ -27,6 +31,34 @@
     text-align: center;
 
     h3 {
-        margin : 50px 390px 50px 390px;
+        margin: 50px 390px;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout_4_top {
+        h1 {
+            margin: 0 50px;
+        }
+    }
+
+    .layout_4_bottom {
+        h3 {
+            margin: 50px 100px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .layout_4_top {
+        h1 {
+            margin: 0 20px;
+        }
+    }
+
+    .layout_4_bottom {
+        h3 {
+            margin: 50px 50px;
+        }
     }
 }

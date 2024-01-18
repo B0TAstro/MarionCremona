@@ -7,7 +7,7 @@ $illustration1 = $content["illustration1"];
 $illustration2 = $content["illustration2"];
 ?>
 
-<section>
+<section class="illustrated2_center_title_text">
     <div class="layout_3_top">
         <img loading="lazy" src="<?php echo esc_url($illustration1['url']); ?>" alt="<?php echo esc_attr($illustration1['alt']); ?>">
         <div class="content">

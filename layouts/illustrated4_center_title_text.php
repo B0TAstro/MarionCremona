@@ -1,6 +1,7 @@
 <?php
 $title = $content["title"];
 $info = $content["info"];
+$name_link = $content["name_link"];
 $link = $content["link"];
 $text1 = $content["text1"];
 $text2 = $content["text2"];
@@ -10,7 +11,7 @@ $illustration3 = $content["illustration3"];
 $illustration4 = $content["illustration4"];
 ?>
 
-<section>
+<section class="illustrated4_center_title_text">
     <div class="layout_4_top">
         <img loading="lazy" src="<?php echo esc_url($illustration1['url']); ?>" alt="<?php echo esc_attr($illustration1['alt']); ?>">
         <h1><?php echo $title; ?></h1>
@@ -23,7 +24,7 @@ $illustration4 = $content["illustration4"];
         <img loading="lazy" src="<?php echo esc_url($illustration3['url']); ?>" alt="<?php echo esc_attr($illustration3['alt']); ?>">
         <div>
             <h3><?php echo $info; ?></h3>
-            <a href="<?php echo $link; ?>">EN SAVOIR PLUS</a>
+            <a href="<?php echo $link; ?>"><?php echo $name_link; ?></a>
         </div>
         <img loading="lazy" src="<?php echo esc_url($illustration4['url']); ?>" alt="<?php echo esc_attr($illustration4['alt']); ?>">
     </div>
