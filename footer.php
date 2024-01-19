@@ -16,7 +16,7 @@
         <img loading="lazy" src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
         <p>CREMONA</p>
       </div>
-      <div class="contact">
+      <div class="footer_contact">
         <div>
           <p><?php echo $phone_number; ?></p>
           <img src="<?php echo esc_url(get_template_directory_uri() . '/images/global/phone.svg'); ?>" alt="Logo">

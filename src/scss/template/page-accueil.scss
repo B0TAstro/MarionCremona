@@ -17,8 +17,7 @@
 
         .art {
             grid-column: 3 / span 8;
-            outline: 1px solid red;
-
+            
             .mantra {
                 align-items: center;
                 justify-content: center;
@@ -53,21 +52,6 @@
             .paragraph {
                 margin-bottom: 5%;
             }
-
-            a {
-                font-size: 25px;
-                text-decoration: none;
-                border: 1px solid #5F3121;
-                border-radius: 50px;
-                padding: 1% 2%;
-                font-family: 'Helvetica-Light';
-                color: #5F3121;
-
-                &:hover {
-                    background-color: #5F3121;
-                    color: #F3F0E9;
-                }
-            }
         }
     }
 }
@@ -76,6 +60,7 @@
     background-color: #999A8D;
     padding: 5% 0;
     text-align: center;
+    margin-top: 128px;
 
     .wrap {
         h2 {
@@ -112,13 +97,8 @@
             }
         }
 
-        a {
-            font-size: 25px;
-            text-decoration: none;
+        .link {
             border: 1px solid #F3F0E9;
-            border-radius: 50px;
-            padding: 1% 2%;
-            font-family: 'Helvetica-Light';
             color: #F3F0E9;
 
             &:hover {

@@ -1,0 +1,88 @@
+.illustrated1_title_ritual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+
+    .wrap {
+        .container_ritual {
+            display: flex;
+            flex-direction: column;
+            /* Adjusted to column layout for smaller screens */
+
+            .layout_1_content_ritual {
+                margin-left: 27px;
+                text-align: left;
+
+                h1 {
+                    margin: 16px 0 45px 0;
+                }
+
+                p,
+                ul {
+                    font-family: 'Helvetica-Light';
+                    font-size: 24px;
+                    line-height: normal;
+                }
+
+                li {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .wrap {
+            margin: 0 20px;
+
+            .container_ritual {
+                flex-direction: row;
+                /* Original row layout for larger screens */
+                justify-content: space-around;
+                align-items: flex-start;
+
+                .layout_1_content_ritual {
+                    margin-left: 27px;
+                    text-align: left;
+                    /* You can adjust this value based on your design */
+                }
+            }
+        }
+    }
+}
+
+.illustrated1_title_ritual_invert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        /* Adjusted to column layout for smaller screens */
+
+    }
+
+    @media (min-width: 768px) {
+        .wrap {
+            margin: 0 20px;
+
+            .container_ritual {
+                flex-direction: row;
+                /* Original row layout for larger screens */
+                justify-content: space-around;
+                align-items: flex-start;
+
+                .layout_1_content_ritual {
+                    margin-left: 27px;
+                    text-align: left;
+                    /* You can adjust this value based on your design */
+                }
+            }
+        }
+    }
+}

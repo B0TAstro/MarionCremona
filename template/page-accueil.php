@@ -23,14 +23,14 @@ get_header();
                     <h1>MARION CREMONA</h1>
                     <p><?php echo $mantra; ?></p>
                     <div><?php echo $hook; ?></div>
-                    <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-accueil/arrow.svg" alt="Naviguation Arrow">
+                    <a href="qoya" class="arrow"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-accueil/arrow.svg" alt="Naviguation Arrow"></a>
                 </section>
             </div>
             <div class="art">
                 <section class="qoya">
                     <h2><?php echo $section_1_title; ?></h2>
                     <div class="paragraph"><?php echo $section_1_explanation; ?></div>
-                    <a href="<?php echo $link_1->guid; ?>">EN SAVOIR PLUS</a>
+                    <a class="link" href="<?php echo $link_1->guid; ?>">EN SAVOIR PLUS</a>
                 </section>
             </div>
         </div>
@@ -58,7 +58,7 @@ get_header();
                 endif;
                 ?>
             </div>
-            <a href="<?php echo esc_url($link_2->guid); ?>">EN SAVOIR PLUS</a>
+            <a class="link" href="<?php echo esc_url($link_2->guid); ?>">EN SAVOIR PLUS</a>
         </div>
     </section>
 </main>

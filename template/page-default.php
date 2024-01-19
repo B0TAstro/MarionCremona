@@ -4,7 +4,6 @@ get_header();
 ?>
 <main>
     <?php
-
     $flexible_contents = get_field('flexible_content');
     foreach ($flexible_contents as $content) {
         $template_name = $content['acf_fc_layout'];

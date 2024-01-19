@@ -1,0 +1,134 @@
+.quote_activism {
+  padding: 120px 79px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #BF7862;
+}
+
+.content_quote_activism {
+  display: flex;
+  padding: 24px 110px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: #F0A695;
+
+  p {
+    margin: 0;
+    font-family: "Gradeur";
+    font-size: 50px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+  }
+
+  #autor_activism {
+    font-family: 'Helvetica-Light';
+    font-size: 24px;
+    align-self: stretch;
+    text-align: right;
+    align-items: flex-end;
+  }
+}
+
+.illustrated2_center_title_text_activism {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+
+
+  .layout_3_top_activism,
+  .layout_3_bottom_activism {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .layout_3_top_activism {
+    .content_activism {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0 32px;
+    }
+  }
+
+  .layout_3_bottom_activism {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+
+    .paragraph {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrap {
+      margin: 20px 0;
+    }
+
+
+    .layout_3_top,
+    .layout_3_bottom {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+      }
+
+      .content {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.illustrated1_title_text_activism {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 100px 0;
+
+  .wrap {
+    .container_activism {
+      display: flex;
+
+      .layout_1_content_activism {
+        h2 {
+          margin: 16px 0 38px 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrap {
+      margin: 20px 0;
+    }
+
+    .container_activism {
+      flex-direction: column;
+      align-items: center;
+      /* Stack items vertically on smaller screens */
+
+      .layout_1_content_activism {
+        h2 {
+          margin: 16px 0 20px 0;
+          /* Adjust margin for smaller screens */
+        }
+      }
+
+      img {
+        margin-top: 23px;
+        width: 271px;
+        height: 241px;
+      }
+    }
+  }
+}
