@@ -1,0 +1,184 @@
+.bio {
+    display: flex;
+    align-items: center;
+    margin: 193px 0 153px 0;
+
+    .bio_content {
+        padding-right: 25px;
+
+        h3 {
+            margin: 16px 0 16px 0;
+        }
+    }
+
+    img {
+        align-self: flex-end;
+    }
+}
+
+.values {
+    background-color: #BF7862;
+    color: #F3F0E9;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        padding: 68px 0 62px 0;
+    }
+
+    .parent {
+        display: flex;
+        justify-content: space-between;
+        justify-items: stretch;
+
+        >div {
+            margin-bottom: 100px;
+
+            h3 {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+.curse {
+    position: relative;
+    display: flex;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .parent-2 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+
+        .default,
+        .alt {
+            flex: 1; // Ajustez la largeur des colonnes
+
+            >div {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        .default {
+            order: 1; // Pour placer la colonne de gauche à gauche
+        }
+
+        .alt {
+            order: 3; // Pour placer la colonne de droite à droite
+        }
+    }
+
+    img {
+        order: 2; // Pour placer l'image au milieu
+    }
+}
+
+// Media queries pour rendre le CSS responsive
+
+@media screen and (max-width: 768px) {
+    .bio {
+        flex-direction: column;
+        margin: 100px 0;
+
+        .bio_content {
+            padding-right: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            align-self: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .values {
+        h2 {
+            padding: 40px 0;
+        }
+
+        .parent {
+            flex-direction: column;
+
+            >div {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .curse {
+        .parent-2 {
+            flex-direction: column;
+
+            .default,
+            .alt {
+                flex: none;
+                width: 100%;
+
+                >div {
+                    margin-bottom: 10px;
+                }
+            }
+
+            img {
+                width: 100%;
+                max-width: none;
+                margin-bottom: 40px;
+                top: auto;
+                left: auto;
+                transform: none;
+                order: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bio {
+        margin: 50px 0;
+
+        .bio_content {
+            margin-bottom: 10px;
+        }
+    }
+
+    .values {
+        h2 {
+            padding: 20px 0;
+        }
+
+        .parent {
+            >div {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .curse {
+        .parent-2 {
+
+            .default,
+            .alt {
+                >div {
+                    margin-bottom: 5px;
+                }
+            }
+
+            img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
