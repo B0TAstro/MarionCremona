@@ -8,12 +8,19 @@
     .wrap {
         .container_ritual {
             display: flex;
-            flex-direction: column;
-            /* Adjusted to column layout for smaller screens */
+            align-items: center;
+
+            >div {
+                img {
+                    width: 519px;
+                    height: 489px;
+                }
+            }
 
             .layout_1_content_ritual {
                 margin-left: 27px;
                 text-align: left;
+
 
                 h1 {
                     margin: 16px 0 45px 0;
@@ -28,61 +35,130 @@
 
                 li {
                     margin-top: 10px;
-                }
-            }
-        }
-    }
 
-    @media (min-width: 768px) {
-        .wrap {
-            margin: 0 20px;
-
-            .container_ritual {
-                flex-direction: row;
-                /* Original row layout for larger screens */
-                justify-content: space-around;
-                align-items: flex-start;
-
-                .layout_1_content_ritual {
-                    margin-left: 27px;
-                    text-align: left;
-                    /* You can adjust this value based on your design */
+                    a {
+                        color: #101010;
+                    }
                 }
             }
         }
     }
 }
 
+@media (min-width: 768px) {
+
+    .container_ritual {
+        flex-direction: row;
+        /* Original row layout for larger screens */
+        justify-content: space-around;
+        align-items: flex-start;
+
+        div img {
+            width: 333px;
+        }
+
+        .layout_1_content_ritual {
+            margin-left: 27px;
+            text-align: left;
+            /* You can adjust this value based on your design */
+        }
+    }
+}
+
+
 .illustrated1_title_ritual_invert {
+    background-color: #E2B34B;
+    padding: 61px 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 100px 0 100px 0;
 
     .wrap {
         display: flex;
-        flex-direction: column;
-        /* Adjusted to column layout for smaller screens */
+        flex-direction: row;
+        /* Reverse the order to place image to the right */
+        align-items: center;
+        justify-content: center;
 
-    }
+        >div {
+            flex: 1;
+            text-align: left;
+            margin-right: 20px;
+            /* Adjust margin as needed */
 
-    @media (min-width: 768px) {
-        .wrap {
-            margin: 0 20px;
-
-            .container_ritual {
-                flex-direction: row;
-                /* Original row layout for larger screens */
-                justify-content: space-around;
-                align-items: flex-start;
-
-                .layout_1_content_ritual {
-                    margin-left: 27px;
-                    text-align: left;
-                    /* You can adjust this value based on your design */
-                }
+            p {
+                margin-top: 30px;
             }
         }
+
+        img {
+            max-width: 100%;
+            /* Ensure the image is responsive */
+            margin-left: 20px;
+            /* Adjust margin as needed */
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .container_ritual {
+        flex-direction: row;
+        /* Original row layout for larger screens */
+        justify-content: space-around;
+        align-items: flex-start;
+
+        .layout_1_content_ritual {
+            margin-left: 27px;
+            text-align: left;
+            /* You can adjust this value based on your design */
+        }
+    }
+}
+
+
+.illustrated2_center_title_text_ritual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    padding: 0 297px;
+
+
+    .layout_3_top_ritual,
+    .layout_3_mid_ritual {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .layout_3_top_ritual {
+        .content_ritual {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin: 0 32px;
+        }
+    }
+
+    .layout_3_mid_ritual {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+
+        h3 {
+            margin-top: 50px;
+        }
+
+        .paragraph {
+            margin: 0;
+        }
+    }
+
+    .layout_3_bottom_ritual {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
     }
 }

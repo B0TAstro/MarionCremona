@@ -35,14 +35,24 @@ get_header();
             <div><?php echo $section_2_description; ?></div>
             <img loading="lazy" src="<?php echo esc_url($section_2_illustration['url']); ?>" alt="<?php echo esc_attr($section_2_illustration['alt']); ?>">
         </div>
-    </section>  
+    </section>
 
-    <section>
-        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-psycho/desktop-top_left_illustration.svg" alt="Illustration">
-        <h2><?php echo $section_3_title; ?></h2>
-        <div><?php echo $section_3_explanation; ?></div>
-        <p><?php echo $section_3_info; ?></p>
-        <a href="<?php echo $section_3_link; ?>">REJOINS MOI</a>
+    <section class="illustrated2_center_title_text_ritual">
+        <div class="wrap">
+            <div class="layout_3_top_ritual">
+                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-psycho/desktop-mid_illustration.svg" alt="Illustration">
+                <div class="content_ritual">
+                    <h2><?php echo $section_3_title; ?></h2>
+                </div>
+            </div>
+            <div class="layout_3_mid_ritual">
+                <div><?php echo $section_3_explanation; ?></div>
+                <h3><?php echo $section_3_info; ?></h3>
+            </div>
+            <div class="layout_3_bottom_ritual">
+                <a class="link" href="<?php echo $section_3_link; ?>">REJOINS MOI</a>
+            </div>
+        </div>
     </section>
 </main>
 <?php

@@ -9,12 +9,12 @@ get_header();
     $link_1 = get_field('link_1');
     $section_2_title = get_field('section_2_title');
     ?>
-    <section>
+    <section class="section1_curse">
         <h1><?php echo $section_1_title; ?></h1>
         <div><?php echo $section_1_explanation; ?></div>
         <a href="<?php echo esc_url($link_1->guid); ?>">En savoir plus</a>
     </section>
-    <section>
+    <section class="">
         <h2><?php echo $section_2_title; ?></h2>
         <div class="parent">
             <?php

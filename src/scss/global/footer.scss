@@ -1,7 +1,6 @@
 footer {
   background-image: url("../images/global/motif.svg");
   background-size: cover;
-
   background-color: #603121;
   color: #f4f0ea;
   width: 100%;
@@ -49,7 +48,6 @@ footer {
         border-radius: 25px;
         padding: 10px 24px;
         font-size: 20px;
-        ;
         font-family: 'Helvetica-Light';
         color: #F3F0E9;
         margin-top: 2%;
@@ -80,6 +78,52 @@ footer {
       font-size: 15px;
       color: #F3F0E9;
       margin-top: 6px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .top {
+      flex-direction: column;
+
+      .link a {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .name {
+        margin-top: 40px;
+      }
+    }
+
+    .footer_contact {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        margin: 10px 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      a {
+        margin-top: 5%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .name {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer_contact {
+      a {
+        font-size: 18px;
+      }
     }
   }
 }

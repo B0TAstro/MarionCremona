@@ -54,6 +54,11 @@ p {
 
 @media screen and (max-width: 768px) {
 
+  .wrap {
+    margin: 0 20px;
+    padding: 0;
+  }
+
   h1 {
     font-family: 'Gradeur';
     font-size: 45px;
