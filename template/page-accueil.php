@@ -23,7 +23,7 @@ get_header();
                     <h1>MARION CREMONA</h1>
                     <p><?php echo $mantra; ?></p>
                     <div><?php echo $hook; ?></div>
-                    <a href="qoya" class="arrow"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-accueil/arrow.svg" alt="Naviguation Arrow"></a>
+                    <a href="#next" class=" arrow"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-accueil/arrow.svg" alt="Naviguation Arrow"></a>
                 </section>
             </div>
             <div class="art">
@@ -37,7 +37,7 @@ get_header();
         <img class="right" loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-accueil/desktop-right_illustration.svg" alt="Illustration">
         <img class="mobile-right" loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-accueil/mobile-right_illustration.svg" alt="Illustration">
     </div>
-    <section class="course">
+    <section class="course" id="next">
         <div class="wrap">
             <h2><?php echo $section_2_title; ?></h2>
             <div class="parent">
@@ -58,9 +58,28 @@ get_header();
                 endif;
                 ?>
             </div>
-            <a class="link" href="<?php echo esc_url($link_2->guid); ?>">EN SAVOIR PLUS</a>
+            <a class="link" href="<?php echo esc_url($link_2); ?>">EN SAVOIR PLUS</a>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Ajoutez un gestionnaire d'événements au clic sur le lien avec la classe "arrow"
+            $(".arrow").on('click', function(event) {
+                // Empêche le comportement par défaut du lien (navigation vers le haut de la page)
+                event.preventDefault();
+
+                // Récupère l'attribut href pour obtenir l'ID de la section cible
+                var target = $(this).attr('href');
+
+                // Faites défiler la page jusqu'à la section cible avec une animation fluide
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 1000); // Durée de l'animation en millisecondes (par exemple 1000 pour 1 seconde)
+            });
+        });
+    </script>
+
 </main>
 <?php
 get_footer();
