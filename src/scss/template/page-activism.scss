@@ -1,27 +1,3 @@
-.quote_activism {
-  padding: 120px 79px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  background-color: #BF7862;
-}
-
-.content_quote_activism {
-  display: flex;
-  padding: 24px 110px;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 25px;
-  background-color: #F0A695;
-
-  p {
-    margin: 0;
-    font-family: "Gradeur";
-    font-size: 50px;
-    line-height: 60px;
-    align-items: center;
-    text-align: center;
-  }
 
   #autor_activism {
     font-family: 'Helvetica-Light';
@@ -48,6 +24,14 @@
   }
 
   .layout_3_top_activism {
+
+    img {
+      position : absolute;
+      left: 10%;
+      width: 66.95px;
+      height: 88.53px;
+    }
+
     .content_activism {
       display: flex;
       flex-direction: column;
@@ -128,6 +112,158 @@
         margin-top: 23px;
         width: 271px;
         height: 241px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.quote_activism {
+  padding: 120px 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; // Augmenter l'espace entre les éléments
+  background-color: #BF7862;
+}
+
+.content_quote_activism {
+  display: flex;
+  padding: 24px 110px; // Réduire le rembourrage sur les petits écrans
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: #F0A695;
+
+  p {
+    margin: 0;
+    font-family: "Gradeur";
+    font-size: 50px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+    font-family: "Gradeur";
+    font-size: 36px; // Réduire la taille de la police pour les petits écrans
+    line-height: 1.2; // Réduire l'interligne pour les petits écrans
+    text-align: center;
+  }
+
+  #autor_activism {
+    font-family: 'Helvetica-Light';
+    font-size: 18px; // Réduire la taille de la police pour les petits écrans
+    text-align: center;
+  }
+}
+
+.illustrated2_center_title_text_activism {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0; // Réduire la marge sur les petits écrans
+
+  .layout_3_top_activism,
+  .layout_3_bottom_activism {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .layout_3_top_activism {
+
+    img {
+      position : absolute;
+      left: 50%;
+      transform: translateX(-50%); // Centrer l'image horizontalement
+      width: 50px; // Réduire la taille de l'image pour les petits écrans
+      height: auto; // Hauteur automatique
+    }
+
+    .content_activism {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0 20px; // Réduire la marge sur les petits écrans
+      text-align: center;
+    }
+  }
+
+  .layout_3_bottom_activism {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px; // Réduire la marge sur les petits écrans
+
+    .paragraph {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrap {
+      margin: 20px 0; // Réduire la marge sur les petits écrans
+    }
+
+    .layout_3_top_activism,
+    .layout_3_bottom_activism {
+      flex-direction: column; // Afficher les éléments en colonne sur les petits écrans
+
+      img {
+        max-width: 100%; // Ajuster la largeur maximale de l'image
+        margin: 0 auto; // Centrer l'image horizontalement
+      }
+
+      .content_activism {
+        margin: 10px 0; // Réduire la marge sur les petits écrans
+      }
+    }
+  }
+}
+
+.illustrated1_title_text_activism {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0; // Réduire le rembourrage sur les petits écrans
+
+  .wrap {
+    .container_activism {
+      display: flex;
+
+      .layout_1_content_activism {
+        h2 {
+          margin: 16px 0 20px 0; // Réduire la marge sur les petits écrans
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrap {
+      margin: 20px 0; // Réduire la marge sur les petits écrans
+    }
+
+    .container_activism {
+      flex-direction: column; // Afficher les éléments en colonne sur les petits écrans
+      align-items: center; // Centrer les éléments horizontalement sur les petits écrans
+
+      .layout_1_content_activism {
+        h2 {
+          margin: 16px 0 10px 0; // Réduire la marge sur les petits écrans
+        }
+      }
+
+      img {
+        width: 200px; // Réduire la largeur de l'image pour les petits écrans
+        height: auto; // Hauteur automatique
+        margin-top: 20px; // Réduire la marge sur les petits écrans
       }
     }
   }

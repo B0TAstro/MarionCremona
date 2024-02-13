@@ -1,9 +1,17 @@
+#ritual {
+    margin: 150px 0 50px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .illustrated1_title_ritual {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 100px 0;
+    margin: 0 0 100px 0;
+    padding: 0 61px 0 80px;
 
     .wrap {
         .container_ritual {
@@ -12,8 +20,9 @@
 
             >div {
                 img {
-                    width: 519px;
-                    height: 489px;
+                    width: 419px;
+                    height: 389px;
+                    margin-right: 50px;
                 }
             }
 
@@ -21,10 +30,6 @@
                 margin-left: 27px;
                 text-align: left;
 
-
-                h1 {
-                    margin: 16px 0 45px 0;
-                }
 
                 p,
                 ul {

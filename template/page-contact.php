@@ -13,9 +13,9 @@ if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '')
     $message .= "Adresse mail: {$_POST['email']}\r\n";
     $message .= "Numéro de téléphone: {$_POST['phone']}\r\n";
 
-    wp_mail('cremona.marion@gmail.com', $subject, $message);
+    wp_mail('tom@famille-boullay.fr', $subject, $message);
 
-    echo '<div>Message envoyé avec succès !</div>';
+    echo '<div class="success-message">Message envoyé avec succès !</div>';
 }
 ?>
 

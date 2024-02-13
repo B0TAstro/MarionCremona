@@ -1,6 +1,6 @@
 .contact {
     display: flex;
-    margin: 130px 0;
+    margin: 150px 0;
 
     form {
         border-radius: 25px;
@@ -24,14 +24,14 @@
             display: flex;
             margin: 0 0 30px 0;
 
-            > div {
+            >div {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
             }
 
             .right {
-                margin-left: 250px;
+                margin-left: 200px;
             }
 
             label {
@@ -54,13 +54,22 @@
                 border: none;
             }
 
+            select {
+                padding: 0 15px 0 15px;
+                font-family: "Helvetica-Light";
+            }
+
             input {
                 width: 240px;
+                padding: 0 15px 0 15px;
+                font-family: "Helvetica-Light";
             }
 
             textarea {
                 height: 119px;
                 resize: none;
+                padding: 15px;
+                font-family: "Helvetica-Light";
             }
         }
 
@@ -115,7 +124,6 @@
         }
     }
 
-    // Media Queries
     @media (max-width: 768px) {
         margin: 80px 0;
 
@@ -143,7 +151,11 @@
         }
 
         .splitter {
-            margin: 0 20px;
+            display: none;
+        }
+
+        .contact_content {
+            order: 1;
         }
     }
 
@@ -168,4 +180,18 @@
             }
         }
     }
+}
+
+.success-message {
+    color: #3c763d;
+    text-align: center;
+    font-family: 'HelveticaNeue-Medium';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

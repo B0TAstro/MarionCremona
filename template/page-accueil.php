@@ -64,18 +64,12 @@ get_header();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Ajoutez un gestionnaire d'événements au clic sur le lien avec la classe "arrow"
             $(".arrow").on('click', function(event) {
-                // Empêche le comportement par défaut du lien (navigation vers le haut de la page)
                 event.preventDefault();
-
-                // Récupère l'attribut href pour obtenir l'ID de la section cible
                 var target = $(this).attr('href');
-
-                // Faites défiler la page jusqu'à la section cible avec une animation fluide
                 $('html, body').animate({
                     scrollTop: $(target).offset().top
-                }, 1000); // Durée de l'animation en millisecondes (par exemple 1000 pour 1 seconde)
+                }, 1000);
             });
         });
     </script>

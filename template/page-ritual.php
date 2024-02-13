@@ -16,6 +16,7 @@ get_header();
     $section_3_info = get_field('section_3_info');
     $section_3_link = get_field('section_3_link');
     ?>
+    <h1 id="ritual"><?php echo $section_1_title; ?></h1>
     <section class="illustrated1_title_ritual <?php echo (isset($var)) ? $var : ''; ?>">
         <div class="wrap">
             <div class="container_ritual">
@@ -23,7 +24,6 @@ get_header();
                     <img loading="lazy" src="<?php echo esc_url($section_1_illustration['url']); ?>" alt="<?php echo esc_attr($section_1_illustration['alt']); ?>">
                 </div>
                 <div class="layout_1_content_ritual">
-                    <h1><?php echo $section_1_title; ?></h1>
                     <div><?php echo $section_1_text; ?></div>
                 </div>
             </div>
