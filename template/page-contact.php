@@ -6,18 +6,18 @@ $explanation = get_field('explanation');
 $link = get_field('link');
 
 if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '') {
-    $subject = 'Demande de contact - ' . $_POST['interest'];
+    $subject = '[SITE WEB] Demande de contact - ' . $_POST['interest'];
     $message = $_POST['additional_info'];
     $message .= "\r\n\r\n";
     $message .= $_POST['lastname'] . ' ' . $_POST['firstname'] . "\r\n";
     $message .= "Adresse mail: {$_POST['email']}\r\n";
     $message .= "Numéro de téléphone: {$_POST['phone']}\r\n";
 
-    wp_mail('tom@famille-boullay.fr', $subject, $message);
+    wp_mail('contact@marion-cremona-accompagnement.fr', $subject, $message);
 
     echo '<div class="success-message">Message envoyé avec succès !</div>';
 }
-?>
+?>∑
 
 <main>
     <div class="wrap">

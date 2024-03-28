@@ -1,0 +1,123 @@
+/*
+  #autor_activism {
+    font-family: 'Helvetica-Light';
+    font-size: 24px;
+    align-self: stretch;
+    text-align: right;
+    align-items: flex-end;
+  }
+// Remove the closing curly brace
+
+.illustrated2_center_title_text_activism {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+
+
+  .layout_3_top_activism,
+  .layout_3_bottom_activism {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .layout_3_top_activism {
+
+    img {
+      position : absolute;
+      left: 10%;
+      width: 66.95px;
+      height: 88.53px;
+    }
+
+    .content_activism {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0 32px;
+    }
+  }
+
+  .layout_3_bottom_activism {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+
+    .paragraph {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrap {
+      margin: 20px 0;
+    }
+
+
+    .layout_3_top,
+    .layout_3_bottom {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+      }
+
+      .content {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.illustrated1_title_text_activism {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 100px 0;
+
+  .wrap {
+    .container_activism {
+      display: flex;
+
+      .layout_1_content_activism {
+        h2 {
+          margin: 16px 0 38px 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrap {
+      margin: 20px 0;
+    }
+
+    .container_activism {
+      flex-direction: column;
+      align-items: center;
+     
+
+      .layout_1_content_activism {
+        h2 {
+          margin: 16px 0 20px 0;
+        
+        }
+      }
+
+      img {
+        margin-top: 23px;
+        width: 271px;
+        height: 241px;
+      }
+    }
+  }
+}
+
+
+*/
+
+

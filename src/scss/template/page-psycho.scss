@@ -1,200 +1,202 @@
 .illustrated4_center_title_text_psycho {
-    margin: 150px 20px;
+  margin: 150px 20px;
 
-    .layout_4_top_psycho {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        text-align: center;
+  .layout_4_top_psycho {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .layout_4_mid_psycho {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 120px;
+  }
+
+  .layout_4_bottom_psycho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 0;
+      margin-top: 250px;
     }
 
+    h3 {
+      margin: 50px 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .illustrated4_center_title_text_psycho {
+    margin: 50px 20px 50px 20px;
+
     .layout_4_mid_psycho {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0 120px;
+      padding: 0 20px;
     }
 
     .layout_4_bottom_psycho {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-
-        img {
-            position: absolute;
-            left: 0;
-            margin-top: 250px;
-        }
-
-        h3 {
-            margin: 50px 20px;
-        }
+      img {
+        position: absolute;
+        width: 25%;
+        left: 0;
+        margin-top: 50px;
+      }
     }
+  }
 }
-
-@media (max-width: 768px) {
-    .illustrated4_center_title_text_psycho {
-        margin: 50px 20px 50px 20px;
-
-        .layout_4_mid_psycho {
-            padding: 0 20px;
-        }
-
-        .layout_4_bottom_psycho {
-            img {
-                position: absolute;
-                width: 25%;
-                left: 0;
-                margin-top: 50px;
-            }
-        }
-    }
-}
-
-
 
 .quote_psycho {
-    padding: 120px 79px;
+  padding: 120px 79px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #e2b24c;
+
+  .content_quote_psycho {
+    display: flex;
+    padding: 24px 110px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    background-color: #E2B24C;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #f7d38b;
 
-    .content_quote_psycho {
-        display: flex;
-        padding: 24px 110px;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 25px;
-        background-color: #F7D38B;
-
-        p {
-            margin: 0;
-            font-family: "Gradeur";
-            font-size: 50px;
-            line-height: 60px;
-            align-items: center;
-            text-align: center;
-        }
-
-        #autor_psycho {
-            font-family: 'Helvetica-Light';
-            font-size: 24px;
-            align-self: stretch;
-            text-align: right;
-            align-items: flex-end;
-        }
+    p {
+      margin: 0;
+      font-family: "Gradeur";
+      font-size: 50px;
+      line-height: 60px;
+      align-items: center;
+      text-align: center;
     }
+
+    #autor_psycho {
+      font-family: "Helvetica-Light";
+      font-size: 24px;
+      align-self: stretch;
+      text-align: right;
+      align-items: flex-end;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    .quote_psycho {
-        padding: 45px 30px;
+  .quote_psycho {
+    padding: 45px 30px;
 
-        .content_quote_psycho {
-            padding: 16px 20px;
+    .content_quote_psycho {
+      padding: 16px 20px;
 
-            p {
-                font-family: "Gradeur";
-                font-size: 22px;
-                line-height: 60px;
-            }
+      p {
+        font-family: "Gradeur";
+        font-size: 22px;
+        line-height: 60px;
+      }
 
-            #autor_psycho {
-                font-family: 'Helvetica-Light';
-                font-size: 16px;
-            }
-        }
+      #autor_psycho {
+        font-family: "Helvetica-Light";
+        font-size: 16px;
+      }
     }
+  }
 }
 
 .illustrated2_title_text_psycho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+
+  > div {
+    img {
+      margin-left: 24px;
+    }
+  }
+
+  .layout_2_top {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-left: 136px;
+    }
+  }
+
+  .layout_2_bottom {
+    h3 {
+      margin: 16px 0;
+    }
+  }
+}
+
+.illustrated2_title_text_psycho_invert {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 100px 0 0 0;
+
+  .wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 100px 0;
+  }
 
-    >div {
-        img {
-            margin-left: 24px;
-        }
-    }
+  img {
+    margin-left: 124px;
+    width: 173px;
+  }
 
-    .layout_2_top {
-        display: flex;
-        align-items: center;
+  > div {
+    margin: 0 80px 155px 0;
+  }
 
-        img {
-            margin-left: 136px;
-        }
-    }
-
-    .layout_2_bottom {
-        h3 {
-            margin: 16px 0;
-        }
-    }
-}
-
-.illustrated2_title_text_psycho_invert {
+  .layout_2_top {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 100px 0 0 0;
+    align-items: center;
+    justify-content: right;
 
-    >div {
-        img {
-            margin-left: 24px;
-            width: 173px;
-        }
+    img {
+      margin-left: 136px;
+      max-width: 100%;
+      /* Ensure the image is responsive */
+    }
+  }
+
+  .layout_2_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .illustrated2_title_text_psycho_invert {
+      flex-direction: column;
+      align-items: flex-end;
     }
 
-    >div {
-        .wrap {
-            margin: 0 80px 155px 0
-        }
-    }
-
-    .layout_2_top {
-        display: flex;
-        align-items: center;
-        justify-content: right;
-
-        img {
-            margin-left: 136px;
-            max-width: 100%;
-            /* Ensure the image is responsive */
-        }
+    > div {
+      img {
+        margin-left: 24px;
+        width: 85px;
+      }
     }
 
     .layout_2_bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: right;
-        margin-top: 20px;
+      align-items: center;
+      text-align: center;
     }
-
-    @media (max-width: 768px) {
-        .illustrated2_title_text_psycho_invert {
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        >div {
-            img {
-                margin-left: 24px;
-                width: 85px;
-            }
-        }
-
-        .layout_2_bottom {
-            align-items: center;
-            text-align: center;
-        }
-    }
+  }
 }

@@ -59,11 +59,9 @@ get_header();
 
 
     <section class="illustrated2_title_text_psycho_invert" <?php echo (isset($var)) ? $var : ''; ?>">
-        <div>
+        <div class="wrap">
             <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-psycho/desktop-bottom_left_illustration.svg" alt="Illustration">
-        </div>
-        <div>
-            <div class="wrap">
+            <div>
                 <div class="layout_2_top">
                     <div class="layout_2_content">
                         <h3><?php echo $section_3_subtitle; ?></h3>
@@ -72,14 +70,9 @@ get_header();
                 <div class="layout_2_bottom">
                     <div><?php echo $section_3_text; ?></div>
                 </div>
-
             </div>
         </div>
     </section>
-
-
-
-
 </main>
 <?php
 get_footer();
