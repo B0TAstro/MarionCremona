@@ -30,7 +30,7 @@ get_header();
                 <section class="qoya">
                     <h2><?php echo $section_1_title; ?></h2>
                     <div class="paragraph"><?php echo $section_1_explanation; ?></div>
-                    <a class="link" href="<?php echo $link_1->guid; ?>">EN SAVOIR PLUS</a>
+                    <a class="link" href="<?php echo esc_url($link_1); ?>">EN SAVOIR PLUS</a>
                 </section>
             </div>
         </div>

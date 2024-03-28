@@ -13,7 +13,7 @@ get_header();
         <section class="section1_curse">
             <h1><?php echo $section_1_title; ?></h1>
             <div><?php echo $section_1_explanation; ?></div>
-            <a class="link" <?php echo esc_url($link_1->guid); ?>">En savoir plus</a>
+            <a class="link" href="<?php echo esc_url($link_1); ?>">En savoir plus</a>
         </section>
     </div>
     <section class="section2_curse">

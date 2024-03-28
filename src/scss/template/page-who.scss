@@ -32,9 +32,16 @@
         display: flex;
         justify-content: space-between;
         justify-items: stretch;
+        align-items: flex-end;
+
 
         >div {
             margin-bottom: 100px;
+
+            img {
+                width: 100%;
+                max-width: 270px;
+            }
 
             h3 {
                 margin-top: 50px;
@@ -44,44 +51,36 @@
 }
 
 .curse {
-    position: relative;
-    display: flex;
+    margin-bottom: 133px;
 
     h2 {
         text-align: center;
-        margin-bottom: 60px;
     }
 
-    .parent-2 {
+    .content {
         display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
         align-items: center;
+        justify-content: center;
+        gap: 50px;
 
-        .default,
-        .alt {
-            flex: 1; // Ajustez la largeur des colonnes
+        .parent-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 50px;
+            gap: 100px;
 
-            >div {
+            .default,
+            .alt {
+                flex: 1;
                 text-align: center;
-                margin-bottom: 20px;
             }
         }
 
-        .default {
-            order: 1; // Pour placer la colonne de gauche à gauche
+        img {
+            width: 100%;
+            max-height: 1100px; // Pour assurer que l'image ne dépasse pas la largeur du conteneur
         }
-
-        .alt {
-            order: 3; // Pour placer la colonne de droite à droite
-        }
-    }
-
-    img {
-        order: 2; // Pour placer l'image au milieu
     }
 }
 

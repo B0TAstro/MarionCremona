@@ -44,25 +44,27 @@ get_header();
     <div class="wrap">
         <section class="curse">
             <h2><?php echo $section_3_title; ?></h2>
-            <div class="parent-2">
-                <?php
-                if (have_rows('curse')) :
-                    $i = 0;
-                    while (have_rows('curse')) : the_row();
-                        $text = get_sub_field('text');
-                        $class = $i % 2 == 0 ? "default" : "alt";
-                ?>
-                        <div class="<?php echo $class; ?>">
-                            <div><?php echo $text; ?></div>
-                        </div>
-                <?php
-                        $i++;
-                    endwhile;
-                else :
-                endif;
-                ?>
+            <div class="content">
+                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-who/desktop-illustration.svg" alt="Illustration">
+                <div class="parent-2">
+                    <?php
+                    if (have_rows('curse')) :
+                        $i = 0;
+                        while (have_rows('curse')) : the_row();
+                            $text = get_sub_field('text');
+                            $class = $i % 2 == 0 ? "default" : "alt";
+                    ?>
+                            <div class="<?php echo $class; ?>">
+                                <div><?php echo $text; ?></div>
+                            </div>
+                    <?php
+                            $i++;
+                        endwhile;
+                    else :
+                    endif;
+                    ?>
+                </div>
             </div>
-            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/images/template/page-who/desktop-illustration.svg" alt="Illustration">
         </section>
     </div>
 </main>
