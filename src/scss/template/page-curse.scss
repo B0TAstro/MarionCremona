@@ -20,6 +20,15 @@
         text-align: center;
         margin-top: 20px;
     }
+
+    @media only screen and (max-width: 990px) {
+        padding: 0 50px 0 50px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .section2_curse {
@@ -40,7 +49,7 @@
 
         > div {
             background-color: #BCBEAE;
-            border-radius: 5%;
+            border-radius: 25px;
             margin-bottom: 100px;
             text-align: center;
             padding: 80px 110px 80px 110px;
@@ -78,5 +87,18 @@
             }
         }
 
+    }
+
+    @media only screen and (max-width: 990px) {
+        padding: 0 50px 0 50px;
+
+        h2 {
+            font-size: 24px;
+            margin: 60px 0 70px 0;
+        }
+
+        .parent > div {
+            padding: 50px 70px 50px 70px;
+        }
     }
 }

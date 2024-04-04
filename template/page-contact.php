@@ -17,7 +17,7 @@ if (isset($_POST['submit']) && $_POST['firstname'] && $_POST['lastname'] !== '')
 
     echo '<div class="success-message">Message envoyé avec succès !</div>';
 }
-?>∑
+?>
 
 <main>
     <div class="wrap">
