@@ -4,6 +4,7 @@ get_header();
 <main>
     <section class="blog">
         <div class="wrap">
+            <h1>MON JOURNAL</h1>
             <?php while (have_posts()) : the_post(); ?>
                 <article>
                     <h2><?php the_title(); ?></h2>
